@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="left-panel">
+        <h2>Control panel</h2>
+
+        <div class="dim-slider left">
+            <p>Panel dimensions: <span class="dim"></span></p>
+            <input id="slider" type="range" min="1" max="64" value="16" step="1">
+        </div>
+        
+        <button id="clear-btn" class="left btn">Clear all</button>
+        <button id="rainbow-road" class="left btn rainbow">Rainbow road</button>
+    </div>
+
+    <div class="right-panel">
+        <h2 class="right-header">Drawboard</h2>
+        <div class="drawboard"></div>
+    </div>
+</body>
+</html>
